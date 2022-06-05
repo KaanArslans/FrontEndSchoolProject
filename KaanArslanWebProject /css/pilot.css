@@ -1,0 +1,34 @@
+.row {
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+}
+
+.fle {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: url("../images/pilotback.jpg");
+}
+
+#leclerc {
+  height: 50px;
+}
+.head h1 {
+  text-align: center;
+  color: white;
+}
+#button {
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  bottom: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100px;
+  left: 25%;
+  right: 25%;
+}

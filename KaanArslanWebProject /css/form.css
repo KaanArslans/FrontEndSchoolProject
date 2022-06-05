@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/thumb-1920-317664.jpg");
+}
+
+.form {
+  background-color: grey;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 15%;
+  opacity: 0.6;
+}
+
+#button {
+  background-color: greenyellow;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  opacity: 2;
+}

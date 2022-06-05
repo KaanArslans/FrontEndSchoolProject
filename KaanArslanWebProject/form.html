@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css" />
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Please enter your email"
+      />
+      <label for="phone">Phone address</label>
+      <input type="text" name="phone" id="phone" placeholder="your phone" />
+      <label for="password">Password</label>
+      <input
+        type="text"
+        name="password"
+        id="password"
+        placeholder="enter your password"
+      />
+      <label for="repassword">Password again</label>
+      <input
+        type="text"
+        name="repassword"
+        id="repassword"
+        placeholder="enter your password again"
+      />
+      <div id="button">SUBMIT</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(function () {
+    $("#button").click(function () {
+      check = true;
+      if ($("#email").val() == "") {
+        check = false;
+        $("#email").val("YOUR EMAIL FIELD CAN NOT BE EMPTY");
+      }
+      if ($("#phone").val() == "") {
+        check = false;
+        $("#phone").val("YOUR PHONE FIELD CAN NOT BE EMPTY");
+      }
+      if ($("#password").val() == "") {
+        check = false;
+        $("#password").val("YOUR PASSWORD FIELD CAN NOT BE EMPTY");
+        $("#repassword").val("YOUR REPASSWORD FIELD CAN NOT BE EMPTY");
+      }
+      if ($("#password").val() != $("#repassword").val()) {
+        check = false;
+        $("#password").val("UNMATCHING PASSWORD");
+        $("#repassword").val("UNMATCHING PASSWORD");
+      }
+      if (check) {
+        alert("message has been send");
+      }
+    });
+  });
+</script>

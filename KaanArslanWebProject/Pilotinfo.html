@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/pilot.css" />
+  </head>
+  <body>
+    <div class="head" id="head">
+      <li id="list">
+        <ul id="element">
+          Homepage
+        </ul>
+        <ul id="element1">
+          Game
+        </ul>
+        <ul id="element2">
+          Form
+        </ul>
+      </li>
+    </div>
+    <div class="fle">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/max.png" />
+              <span class="card-title">MAX VERSTAPPEN</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/lewis.png" />
+              <span class="card-title">LEWIS HAMILTON</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="leclerc">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leclerc2.png" />
+              <span class="card-title">CHARLES LECLERC</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="button">SHOW MENU</div>
+  </body>
+</html>
+
+<script>
+  $(function () {
+    //designing menu with jquery
+    $("#head").css("background-color", "red");
+    $("#list").css("display", "flex");
+    $("#list").css("justify-content", "space-around");
+    $("#element").css("color", "white");
+    $("#element1").css("color", "white");
+    $("#element2").css("color", "white");
+    $("#element").css("border", "1px solid black");
+    $("#element1").css("border", "1px solid black");
+    $("#element2").css("border", "1px solid black");
+    $("#element").css("padding", "20px");
+    $("#element1").css("padding", "20px");
+    $("#element2").css("padding", "20px");
+    $("#element").css("background-color", "black");
+    $("#element1").css("background-color", "black");
+    $("#element2").css("background-color", "black");
+    $("#head").css("display", "none");
+    $("#button").css("border", "1px solid black");
+    $("#button").css("background-color", "red");
+    $("#button").css("margin-bottom", "5px");
+    $("#button").css("width", "70px");
+    $("#button").css("margin", "0 auto");
+    $("#button").click(function () {
+      $("#head").css("display", "");
+      $("#button").css("display", "none");
+    });
+  });
+</script>
